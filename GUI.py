@@ -235,16 +235,17 @@ class LoginFrame(Frame):
             self.quit()
 
         elif username == "alvin" and password == "pass":
-
             tm.showinfo("Login info", "Welcome Alvin")
 
         elif username == "jordan" and password == "password":
-
             tm.showinfo("Login info", "Welcome Jordan")
 
         elif username == "max" and password == "password":
-
             tm.showinfo("Login info", "Welcome Max")
+            
+        elif username == "admin" and password == "admin":
+            tm.showinfo("Login info", "Welcome Admin")
+            
         else:
             tm.showerror("Login error", "Incorrect username")
             exit(0)
